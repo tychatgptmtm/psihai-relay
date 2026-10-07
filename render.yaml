@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: psihai-relay
+    runtime: node
+    plan: free
+    buildCommand: "true"
+    startCommand: node server.js
+    envVars:
+      - key: RELAY_TOKEN
+        generateValue: true
